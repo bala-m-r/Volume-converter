@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='UTF-8'>
+    <meta name=" viewport" content=" width = device-width, initial-scale =1">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Volume Converter</title>
+
+</head>
+
+<body id="body">
+    <h1>Enter the value and choose the Units</h1>
+    <form onsubmit="">
+        <table id="table">
+            <tr>
+                <td>
+                    <lable for="value"> From:</lable>
+                </td>
+                <td>
+                    <input required autocomplete="off" name="valueInput" type="text" id="value" class="box"
+                        placeholder="Value">
+                </td>
+                <td>
+                    <select name="unit1" class="unit" id="valueUnit">
+                        <optgroup label="units">
+                            <option value="cubic-meter">cubic meter </option>
+                            <!-- <option value="cubic-kilometer">cubic Kilometer</option> -->
+                            <option value="cubic-centimeter">cubic centimeter</option>
+                            <option value="cubic-milimeter">cubic millimeter</option>
+                            <option value="cubic-decimeter">cubic decimeter </option>
+                            <!-- <option value="cubic-mile">cubic mile</option> -->
+                            <option value="cubic-yard">cubic yard </option>
+                            <option value="cubic-foot">cubic foot </option>
+                            <option value="cubic-inch">cubic inch </option>
+                            <option value="milli-liter">milli liter</option>
+                            <option value="liter">liter</option>
+                            <option value="kilo-liter">Kilo liter</option>
+                            <!-- <option value="exa-liter">exa liter </option>
+                            <option value="peta-liter">peta liter </option>
+                            <option value="tera-liter">tera liter </option>
+                            <option value="giga-liter">giga liter </option> -->
+                            <option value="mega-liter">mega liter </option>
+                            <option value="gallon">gallon </option>
+                            <option value="quart"> quart</option>
+                            <option value="pint">pint </option>
+                            <option value="tablespoon">tablespoon</option>
+                            <option value="teaspoon">teaspoon </option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <lable for="result"> To:</lable>
+                </td>
+                <td>
+                    <input type="text" autocomplete="off" class="box" id="result" placeholder="Result">
+                </td>
+                <td>
+                    <select name="unit2" class="unit" id="resultUnit">
+                        <optgroup label="units">
+                            <option value="cubic-meter">cubic meter </option>
+                            <!-- <option value="cubic-kilometer">cubic Kilometer</option> -->
+                            <option value="cubic-centimeter">cubic centimeter</option>
+                            <option value="cubic-milimeter">cubic millimeter</option>
+                            <option value="cubic-decimeter">cubic decimeter </option>
+                            <!-- <option value="cubic-mile">cubic mile</option> -->
+                            <option value="cubic-yard">cubic yard </option>
+                            <option value="cubic-foot">cubic foot </option>
+                            <option value="cubic-inch">cubic inch </option>
+                            <option value="milli-liter">milli liter</option>
+                            <option value="liter">liter</option>
+                            <option value="kilo-liter">Kilo liter</option>
+                            <!-- <option value="exa-liter">exa liter </option>
+                            <option value="peta-liter">peta liter </option>
+                            <option value="tera-liter">tera liter </option>
+                            <option value="giga-liter">giga liter </option> -->
+                            <option value="mega-liter">mega liter </option>
+                            <option value="gallon">gallon </option>
+                            <option value="quart"> quart</option>
+                            <option value="pint">pint </option>
+                            <option value="tablespoon">tablespoon</option>
+                            <option value="teaspoon">teaspoon </option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <button type="submit" id="button">CONVERT</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
